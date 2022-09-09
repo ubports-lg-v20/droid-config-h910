@@ -13,11 +13,20 @@ Requires: droid-config-h910-preinit-plugin
 Requires: droid-config-h910-flashing
 Requires: droid-config-h910-bluez5
 Requires: droid-hal-version-h910
+Requires: droid-hal-h910-detritus
 
 # Hybris packages
 Requires: libhybris-libEGL
 Requires: libhybris-libGLESv2
 Requires: libhybris-libwayland-egl
+
+# Bluetooth
+Requires: bluebinder
+
+# Telephony
+Requires: ofono-ril-plugin
+Requires: ofono-ril-binder-plugin
+
 
 # Sensors
 Requires: hybris-libsensorfw-qt5
@@ -29,7 +38,7 @@ Requires: libngf-qt5-qtfeedback
 # Needed for /dev/touchscreen symlink
 Requires: qt5-plugin-generic-evdev
 
-Requires: pulseaudio-modules-droid
+Requires: pulseaudio-modules-droid-jb2q
 Requires: pulseaudio-modules-droid-hidl
 
 # The -dummy-af is needed for newer devices that run the main
